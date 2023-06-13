@@ -20,5 +20,4 @@ For the next output, decoder will use its current state as the context vector, w
 7. Train model with 25 epochs
 8. Build reference and Predictions:
 For variable output sequence size, we will modify the decoder such that it will work in a loop and stop generating output when a condition is met. This condition  can be in satisfied in two ways:
-(i) If the decoder generated the maximum number of outputs defined by the user, *or*
-(ii) If the decoder generated a special "STOP" symbol
+If the decoder generated the maximum number of outputs defined by the user, or If the decoder generated a special "STOP" symbol

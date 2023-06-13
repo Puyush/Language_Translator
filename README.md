@@ -16,10 +16,9 @@ Steps :-
 Decoder produces the output sequence one by one. For each output, the decoder consumes a context vector and an input.
 The initial context vector is created by the encoder. The initial input is a special symbol i.e. <start> for decoder to make it start.
 Using initial context and initial input, decoder will generate the first output.
-  
 For the next output, decoder will use its current state as the context vector, we (the teacher) will provide the correct output to the decoder as input
-8. Train model with 25 epochs
-9. Build reference and Predictions:
+7. Train model with 25 epochs
+8. Build reference and Predictions:
 For variable output sequence size, we will modify the decoder such that it will work in a loop and stop generating output when a condition is met. This condition  can be in satisfied in two ways:
 (i) If the decoder generated the maximum number of outputs defined by the user, *or*
 (ii) If the decoder generated a special "STOP" symbol
